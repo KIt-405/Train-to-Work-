@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRAIN TO WORK + | Web Application</title>
+  <meta name="description" content="Improved web-based application for youth employability, training discovery, and job readiness in Malaysia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="careerbridge-assets/styles.css">
+</head>
+<body>
+  <header class="site-header" data-elevated="false">
+    <a class="brand" href="#top" aria-label="TRAIN TO WORK + home">
+      <span class="brand-mark">T+</span>
+      <span>
+        <strong>TRAIN TO WORK +</strong>
+        <small>Career readiness hub</small>
+      </span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#opportunities">Opportunities</a>
+      <a href="#saved">Saved</a>
+      <a href="#support">Support</a>
+      <a href="#apply">Apply</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="careerbridge-assets/career-hero.png" alt="">
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Improved from previous "Training to Work" project</p>
+        <h1>TRAIN TO WORK +</h1>
+        <p class="hero-copy">A career readiness platform that helps Malaysian youths move from skills gaps to verified training, guided applications, and decent work opportunities.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#opportunities">Explore matches</a>
+          <a class="button secondary" href="#readiness">Start skill check</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Project snapshot">
+        <div>
+          <span class="metric">1</span>
+          <span>Focus: skills training and decent work pathways</span>
+        </div>
+        <div>
+          <span class="metric">4</span>
+          <span>Main tools: skill check, opportunity finder, saved shortlist, support</span>
+        </div>
+        <div>
+          <span class="metric">15</span>
+          <span>Minute presentation-ready website demo</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="quick-access" aria-label="Quick access features">
+      <a href="#readiness"><span>Skill check</span><strong>Get a pathway</strong></a>
+      <a href="#opportunities"><span>Advanced search</span><strong>Filter opportunities</strong></a>
+      <a href="#saved"><span>Shortlist</span><strong>Save useful listings</strong></a>
+      <a href="#support"><span>AI guide</span><strong>Ask for help</strong></a>
+    </section>
+
+    <section id="problem" class="section split">
+      <div>
+        <p class="eyebrow">Problem background</p>
+        <h2>Youth unemployment is not only a job vacancy problem.</h2>
+        <p>Many young job seekers struggle because training information, vacancy details, interview preparation, and career guidance are scattered across different platforms. The previous project correctly identified unemployment and skills mismatch, but the website mostly presented information instead of guiding users through action.</p>
+      </div>
+      <div class="insight-grid" aria-label="Problem factors">
+        <article>
+          <strong>Skills mismatch</strong>
+          <p>Graduates may not have the communication, digital, workplace, or technical skills requested by employers.</p>
+        </article>
+        <article>
+          <strong>Low awareness</strong>
+          <p>Training programmes exist, but users may not know which are suitable, current, or credible.</p>
+        </article>
+        <article>
+          <strong>Search barriers</strong>
+          <p>Job seekers often waste time moving between job boards without clear requirements or next steps.</p>
+        </article>
+        <article>
+          <strong>Weak support</strong>
+          <p>Resume, interview, and follow-up guidance is often missing after users find an opportunity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="solution" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Proposed solution</p>
+        <h2>A guided career pathway, not just a list of links.</h2>
+        <p>TRAIN TO WORK + turns the previous project into a more interactive and user-friendly career readiness system.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">01</div>
+          <h3>Skill Readiness Check</h3>
+          <p>Users answer a short checklist and receive a suggested next step: training, resume help, interview practice, or job application.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">02</div>
+          <h3>Verified Opportunity Finder</h3>
+          <p>Training programmes and job openings are grouped by category, level, deadline, and application type.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">03</div>
+          <h3>Application Support</h3>
+          <p>The form collects user needs and shows a confirmation summary so applicants know what happens next.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">04</div>
+          <h3>Progress Dashboard</h3>
+          <p>Users can track saved opportunities, submitted applications, and recommended preparation tasks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="readiness" class="section readiness">
+      <div>
+        <p class="eyebrow">Interactive demo</p>
+        <h2>Find a suitable next step</h2>
+        <p>Choose your current need and background. The demo recommends a pathway and filters the opportunity list.</p>
+      </div>
+      <form class="readiness-tool" id="readiness-form">
+        <label>
+          I need help with
+          <select id="need">
+            <option value="training">Learning job-ready skills</option>
+            <option value="job">Finding entry-level jobs</option>
+            <option value="resume">Improving my resume</option>
+            <option value="interview">Preparing for interviews</option>
+          </select>
+        </label>
+        <label>
+          My background
+          <select id="background">
+            <option value="student">University student</option>
+            <option value="graduate">Fresh graduate</option>
+            <option value="career-switcher">Career switcher</option>
+          </select>
+        </label>
+        <button class="button primary" type="submit">Get recommendation</button>
+      </form>
+      <div class="recommendation" id="recommendation" aria-live="polite">
+        Select your details to generate a recommended pathway.
+      </div>
+    </section>
+
+    <section id="opportunities" class="section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Opportunity finder</p>
+        <h2>Search training, jobs, mentoring, and support.</h2>
+      </div>
+      <div class="toolbar" aria-label="Opportunity filters">
+        <label class="search-field">
+          <span class="sr-only">Search opportunities</span>
+          <input id="search" type="search" placeholder="Search by skill, role, or provider">
+        </label>
+        <div class="filter-group" role="group" aria-label="Filter category">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="training">Training</button>
+          <button class="filter" type="button" data-filter="job">Jobs</button>
+          <button class="filter" type="button" data-filter="support">Support</button>
+        </div>
+      </div>
+      <div class="advanced-filters" aria-label="Advanced opportunity filters">
+        <label>
+          Level
+          <select id="level-filter">
+            <option value="all">All levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="entry">Entry level</option>
+            <option value="all-levels">All levels support</option>
+          </select>
+        </label>
+        <label>
+          Format
+          <select id="format-filter">
+            <option value="all">All formats</option>
+            <option value="online">Online</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="in-person">In person</option>
+          </select>
+        </label>
+        <label>
+          Deadline
+          <select id="deadline-filter">
+            <option value="all">Any deadline</option>
+            <option value="urgent">Upcoming deadline</option>
+            <option value="open">Open or rolling</option>
+          </select>
+        </label>
+      </div>
+      <div class="opportunity-grid" id="opportunity-grid"></div>
+    </section>
+
+    <section id="saved" class="section saved-section">
+      <div>
+        <p class="eyebrow">Saved shortlist</p>
+        <h2>Saved opportunities</h2>
+        <p>Users can save training, job, or support options for later comparison instead of losing useful listings.</p>
+      </div>
+      <div class="saved-panel">
+        <div class="saved-summary">
+          <strong id="saved-count">0 saved</strong>
+          <span>Shortlist for next application step</span>
+        </div>
+        <ul id="saved-list" class="saved-list">
+          <li>No saved opportunities yet. Use the Save button on any card.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="support" class="section support-section">
+      <div>
+        <p class="eyebrow">Guided support</p>
+        <h2>Career help desk</h2>
+        <p>Get quick guidance for training choices, job search, resume preparation, and interview readiness through a simple assistant and focused FAQ.</p>
+      </div>
+      <div class="support-grid">
+        <article class="chatbot">
+          <div class="chat-header">
+            <div>
+              <strong>TRAIN TO WORK + Assistant</strong>
+              <span>Career guidance chatbot</span>
+            </div>
+            <span class="chat-status">Online</span>
+          </div>
+          <div class="chat-window" id="chat-window" aria-live="polite">
+            <p><strong>Assistant:</strong> Hi! I can help you choose training, prepare a resume, find entry-level jobs, or practise for interviews.</p>
+          </div>
+          <div class="chat-suggestions" aria-label="Suggested chatbot questions">
+            <button type="button" data-chat-prompt="resume">Resume help</button>
+            <button type="button" data-chat-prompt="interview">Interview tips</button>
+            <button type="button" data-chat-prompt="training">Training advice</button>
+          </div>
+          <form id="chat-form" class="chat-form">
+            <label class="sr-only" for="chat-input">Ask the chatbot</label>
+            <input id="chat-input" type="text" placeholder="Ask about resume, interview, job, or training">
+            <button class="button primary" type="submit">Ask</button>
+          </form>
+        </article>
+        <div class="faq-list">
+          <details open>
+            <summary>What can the assistant help with?</summary>
+            <p>It gives quick next-step guidance for training, job search, resume writing, and interview preparation.</p>
+          </details>
+          <details>
+            <summary>Who is the target user?</summary>
+            <p>Malaysian students, fresh graduates, and young job seekers who need training, job matching, and application preparation.</p>
+          </details>
+          <details>
+            <summary>How does it support job seekers?</summary>
+            <p>It helps users identify skill gaps, shortlist suitable opportunities, and take action through guided application support.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply" class="section apply-section">
+      <div>
+        <p class="eyebrow">Application support</p>
+        <h2>Request guidance or save an opportunity.</h2>
+        <p>This improves the old website by giving visitors a clearer action after reading about jobs or training programmes.</p>
+      </div>
+      <form class="application-form" id="application-form">
+        <label>
+          Full name
+          <input required name="name" type="text" placeholder="Your name">
+        </label>
+        <label>
+          Email
+          <input required name="email" type="email" placeholder="name@example.com">
+        </label>
+        <label>
+          Main interest
+          <select name="interest">
+            <option>Digital skills training</option>
+            <option>Entry-level job vacancy</option>
+            <option>Resume review</option>
+            <option>Interview practice</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Tell us what support you need"></textarea>
+        </label>
+        <button class="button primary" type="submit">Submit request</button>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>TRAIN TO WORK +</strong>
+      <p>Improved web-based application proposal based on the previous Training to Work project.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.povertyactionlab.org/policy-insight/reducing-search-barriers-jobseekers" target="_blank" rel="noreferrer">Job search barriers source</a>
+    </div>
+  </footer>
+
+  <script src="careerbridge-assets/app.js"></script>
+</body>
+</html>
